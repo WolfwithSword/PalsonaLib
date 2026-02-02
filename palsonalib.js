@@ -17,7 +17,7 @@ class PalsonaLib {
         return `${this.BASE_URL}/${this.palonaType}/${this.FILENAME}`;
     }
     
-    async fetchPalonas() {
+    async fetchPalsonas() {
         if (!this.palonaType) return;
         let sonas = await this.get(this.getUrl());
         if (sonas == null || sonas == undefined) {
